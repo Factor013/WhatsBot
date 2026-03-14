@@ -11,7 +11,7 @@ const client = new Client({
 });
 
 client.on('qr', (qr) => {
-    console.log("Leia o QRCODE com o Whatsapp");
+    console.log("Leia o QRCODE com o Whatsapp:");
     qrcode.generate(qr, { small: true });
 });
 
