@@ -19,7 +19,7 @@ client.on("ready", () =>{
     console.log('Atendente Online!')
 });
 client.on("message", msg =>{
-    getMessage(msg)
+    getMessage(msg, client)
 });
 
 client.initialize();
