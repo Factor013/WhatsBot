@@ -1,20 +1,13 @@
-const {Poll} = require('whatsapp-web.js')
-
 function getMessage(msg, client){
 
-const poll = new Poll('Escolha uma Opção: ',[
-    'Suporte',
-    'Informações'
-])
-client.sendMessage(msg.from, poll);
+    const menu = 'Seja Bem vindo(a)!\n\n' +
+                 'Escolha uma opção:\n\n' +
+                 '1 - Suporte Técnico\n' +
+                 '2 - Informações\n';
+
+    client.sendMessage(msg.from, menu);
 
 }
 
 
 module.exports = { getMessage };
-
-
-
-
-
-
